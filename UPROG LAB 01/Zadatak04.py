@@ -1,3 +1,6 @@
+# Napišite program koji od korisnika traži unos radijusa kruga te potom izračunava i ispisuje 
+# opseg i površina kruga.
+
 import math
 
 pi = math.pi

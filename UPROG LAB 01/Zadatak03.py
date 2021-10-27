@@ -1,3 +1,6 @@
+# Stvorite dvije varijable broj1 i broj2 i pridružite im cjelobrojne dvoznamenkaste vrijednosti. 
+# Ispišite njihov zbroj, razliku, umnožak, količnik i potenciju broj1broj2. Potom ispišite zadnju i 
+# prvu znamenku za oba broja.
 
 broj1 = 12
 broj2 = 12

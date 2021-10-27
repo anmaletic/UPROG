@@ -1,3 +1,4 @@
+# todo
 
 def GetDjelitelj(x, y):
 
