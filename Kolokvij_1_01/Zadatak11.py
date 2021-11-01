@@ -1,52 +1,30 @@
-# todo
+# Napišite program koji računa najveći zajednički dijelitelj dvaju cijelih brojeva. Unos brojeva 
+# je u glavnom programu. Omogućite ponavljanje izvođenja programa sve dok korisnik ne 
+# unese nulu. Definirajte funkciju koja prihvaća dvije cjelobrojne vrijednosti, te vraća njihov 
+# najveći zajednički djelitelj. Najveći zajednički djelitelj dvaju cijelih brojeva je najveći cijeli 
+# broj koji ih dijeli bez ostatka. 
+# Ispis rezultata je u glavnom programu i npr. za brojeve 24 i 9 treba izgledati ovako:
+# NZD(24, 9) = 3
 
 def GetDjelitelj(x, y):
 
-    dx = []
-    dy = []
-   
-    _d = 2
+    if(x < y):
+        iRange = x
+    else:
+        iRange = y
 
-    while True:
-        if(x % _d == 0):
-            dx.append(_d)
-            x = x // _d
-        else:
-            _d += 1
+    for i in range(iRange):
+        d = i + 1
+        if(x % d == 0 and y % d == 0):
+            _nzd = d            
 
-            if(_d > x):
-                break
+    return _nzd
 
-    _d = 2
-
-    while True:
-        if(y % _d == 0):
-            dy.append(_d)
-            y = y // _d
-        else:
-            _d += 1
-
-            if(_d > y):
-                break
-
-    dRange = len(dx)
-    if(len(dy) < len(dx)):
-        dRange = len(dy)
-
-    D = 1
-    for i in range(dRange):
-        if(dx[i] == dy[i]):
-            D = D * dx[i]
-
-    print(*dx)
-    print(*dy)
-    print(F"{dRange}")
-    print(D)
-
-    
 unosBrojX = int(input("Upisite prvi broj: "))
 unosBroyY = int(input("Upisite drugi broj: "))
 
-GetDjelitelj(unosBrojX, unosBroyY)
+nzd = GetDjelitelj(unosBrojX, unosBroyY)
+
+print(nzd)
 
 # 456 96
