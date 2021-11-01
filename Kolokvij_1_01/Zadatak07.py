@@ -16,4 +16,4 @@ elif(unosGodina >= -3500 and unosGodina < 0):
 elif(unosGodina >= 0 and unosGodina < 476):
     print("Stari vijek")
 else:
-    print("Srednji vijek")
+    print("Srednji vijek") 
