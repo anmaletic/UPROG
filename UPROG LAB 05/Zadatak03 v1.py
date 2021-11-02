@@ -4,7 +4,6 @@
 # Za traženje,ispis i prebrojavanje djelitelja koristite for strukturu ponavljanja.
 
 
-
 while True:
     unosBroj = int(input("Unesite prirodni broj: "))
 

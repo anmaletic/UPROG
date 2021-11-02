@@ -12,7 +12,7 @@ while True:
     for temp_num in str(unosBroj):
         num = int(temp_num)
         if(num == 9):
-            maxNum = int(num)
+            maxNum = num
             break
         else:
             if(maxNum < num):
