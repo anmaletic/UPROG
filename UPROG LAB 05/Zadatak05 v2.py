@@ -21,6 +21,4 @@ for i in range(2, unosBrojFaktorijela+1):
         print(F"{j}", end="")
         if(j != i):
             print("*", end="")
-        else:
-            print("=", end="")
-    print(math.factorial(i))
+    print(F"={math.factorial(i)}")
