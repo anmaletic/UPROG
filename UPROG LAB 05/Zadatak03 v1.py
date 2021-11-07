@@ -4,7 +4,6 @@
 # Za traženje,ispis i prebrojavanje djelitelja koristite for strukturu ponavljanja.
 
 
-
 while True:
     unosBroj = int(input("Unesite prirodni broj: "))
 
@@ -14,10 +13,10 @@ while True:
 djelitelji = []
 
 for i in range(1, unosBroj + 1):
-            if(unosBroj % i == 0):
-                djelitelji.append(i)   
+    if(unosBroj % i == 0):
+        djelitelji.append(i)   
                 
-print(F"Djelitelji broja {unosBroj} su", *djelitelji)
-print(F"Djelitelji broja {unosBroj} su {str(djelitelji)[1:-1]}.")       # *djelitelji ne radi za F""
+#print(F"Djelitelji broja {unosBroj} su", *djelitelji)
+print(F"Djelitelji broja {unosBroj} su {str(djelitelji)[1:-1]}.") 
 
 print(F"Broj {unosBroj} ima {len(djelitelji)} djelitelja.")
