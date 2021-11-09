@@ -21,5 +21,5 @@ while loop:
 
     pravokutnik(unosA, unosB)
 
-    if(unosA < 0 or unosB < 0):
+    if(unosA <= 0 or unosB <= 0):
         loop = False

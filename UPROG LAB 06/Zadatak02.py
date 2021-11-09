@@ -28,8 +28,8 @@ while loop:
     dij = dijagonala_pravokutnika(unosA, unosB)
     print(F"d = {dij}")
 
-    print(F"P = {povrsina_pravokutnika(unosA, unosB)}")
-    print(F"d = {dijagonala_pravokutnika(unosA, unosB)}")
+    # print(F"P = {povrsina_pravokutnika(unosA, unosB)}")
+    # print(F"d = {dijagonala_pravokutnika(unosA, unosB)}")
 
-    if(unosA < 0 or unosB < 0):
+    if(unosA <= 0 or unosB <= 0):
         loop = False
