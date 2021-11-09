@@ -13,14 +13,11 @@ def pravokutnik():
     print(F"P = {povrsina}")
     print(F"d = {dijagonala}")
 
-
-
 while True:
     unosA = float(input("stranica a = "))
     unosB = float(input("stranica b = "))
-    
-    pravokutnik()
 
     if(unosA <= 0 or unosB <= 0):
         break
-
+    
+    pravokutnik()

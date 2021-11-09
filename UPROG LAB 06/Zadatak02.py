@@ -16,11 +16,12 @@ def dijagonala_pravokutnika(p_unosA, p_unosB):
     dijagonala = round(sqrt(p_unosA**2 + p_unosB**2), 2)
     return dijagonala
 
-loop = True
-
-while loop:
+while True:
     unosA = float(input("stranica a = "))
     unosB = float(input("stranica b = "))
+
+    if(unosA <= 0 or unosB <= 0):
+        break
 
     pov = povrsina_pravokutnika(unosA, unosB)
     print(F"P = {pov}")
@@ -30,6 +31,3 @@ while loop:
 
     # print(F"P = {povrsina_pravokutnika(unosA, unosB)}")
     # print(F"d = {dijagonala_pravokutnika(unosA, unosB)}")
-
-    if(unosA <= 0 or unosB <= 0):
-        loop = False
