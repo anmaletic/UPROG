@@ -9,14 +9,13 @@
 
 def broji_znamenke(p_broj, p_znamenka):
     count = 0
-    for num in str(p_broj):
-        if (int(num) == p_znamenka):
+    while p_broj > 0:
+        if(p_broj % 10 == p_znamenka):
             count += 1
+        p_broj = p_broj // 10
     return count
 
-_loop = True
-
-while _loop:
+while True:
     unosBroj = int(input("Unesite nenegativan broj: "))
 
     if(unosBroj >= 0):
@@ -26,4 +25,4 @@ while _loop:
 
         print(F"U broju {unosBroj} znamenka {unosZnamenka} se ponavlja {brojPonavljanja} puta!")
     else:
-        _loop = False
+        break
