@@ -5,12 +5,12 @@
 # vrijednost temperature u °F-a i K-a i te se vrijednosti ispisuju. Ovo se ponavlja dok god je unesena
 # temperatura iznad nule. 
 
-def izracunaj_Kelvine(temp):
+def izracunaj_kelvine(temp):
     '''Vraca unesenu temperaturu u Kelvinima.'''
     return temp + 273.15
     
 
-def izracunaj_Farenhajte(temp):
+def izracunaj_farenhajte(temp):
     '''Vraca unesenu temperaturu u Farenhajtima.'''
     return temp * 1.8 + 32
 
@@ -23,8 +23,8 @@ def main():
 
         print()
 
-        print(F"{unosTemp} *C = {round(izracunaj_Farenhajte(unosTemp), 2)} *F")
-        print(F"{unosTemp} *C = {round(izracunaj_Kelvine(unosTemp), 2)} *K")
+        print(F"{unosTemp} *C = {round(izracunaj_farenhajte(unosTemp), 2)} *F")
+        print(F"{unosTemp} *C = {round(izracunaj_kelvine(unosTemp), 2)} *K")
         print()
 
 main()
