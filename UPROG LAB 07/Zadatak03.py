@@ -4,13 +4,14 @@
 
 
 def Suma(a, b):
-    '''Vraca zbroj svih brojeva izmedu upisanih brojeva.'''
+    '''Prima 2 broja, vraca zbroj svih brojeva izmedu ta dva broja.'''
     sum = 0
     for i in range(a+1, b):
         sum += i
     return sum
 
-
+help(Suma)
+print(Suma.__doc__)
 
 unosA = int(input("Prvi prirodni broj  : "))
 unosB = int(input("Drugi prirodni broj : "))

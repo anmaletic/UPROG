@@ -15,12 +15,12 @@
 def savrsen_broj(a):
     '''Provjerava dali je broj savrsen te ispisuje rezultat.'''
 
-    for i in range(2, a):
+    for i in range(2, a+1):
         sum_djelitelja = 0
         for j in range(1, i // 2 + 1):
             if(i % j == 0):
                 sum_djelitelja += j
-
+            
         if(i == sum_djelitelja):
     	     print(F"{i}")
      
