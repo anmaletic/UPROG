@@ -25,6 +25,6 @@ unosBroyY = int(input("Upisite drugi broj: "))
 
 nzd = GetDjelitelj(unosBrojX, unosBroyY)
 
-print(nzd)
+print(F"NZD({unosBrojX}, {unosBroyY}) = {nzd}")
 
 # 456 96
