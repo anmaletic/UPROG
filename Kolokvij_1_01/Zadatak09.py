@@ -31,9 +31,10 @@ while _loop:
         print("Upisani broj nije u radanom rasponu!")
 
     if(parniSuma > 100 and neparniSuma > 100):
-        print(F"Ukupan broj unosa u rasponu: {uRasponuCount}")
-        print(F"Ukupan broj unosa van raspona: {vanRasponaCount}")
-        print(F"Broj parnih: {parniCount}, Suma parnih: {parniSuma}")
-        print(F"Broj parnih: {neparniCount}, Suma parnih: {neparniSuma}")
-
         _loop = False
+
+print()
+print(F"Ukupan broj unosa u rasponu: {uRasponuCount}")
+print(F"Ukupan broj unosa van raspona: {vanRasponaCount}")
+print(F"Broj parnih: {parniCount}, Suma parnih: {parniSuma}")
+print(F"Broj parnih: {neparniCount}, Suma parnih: {neparniSuma}")
