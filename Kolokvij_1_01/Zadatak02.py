@@ -11,4 +11,4 @@ for i in range(unos):
 
 # print(F"{unos} ima {len(djelitelji)} i to su: {*djelitelji}")     # *(unpack)  ne radi u F"{}"
 
-print(F"{unos} ima {len(djelitelji)} i to su: {str(djelitelji)[1:-1]}") 
+print(F"{unos} ima {len(djelitelji)} djelitelja i to su: {str(djelitelji)[1:-1]}") 
