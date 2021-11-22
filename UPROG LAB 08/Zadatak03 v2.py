@@ -18,13 +18,13 @@ def main():
     Studenti = []
     
     for i in range(5):     
-        tempImePrezime = ""   
-        while tempImePrezime == "":            
-            tempImePrezime = input(F"Unesite ime i prezime {i+1}. studenta: ")
+        unosImePrezime = ""   
+        while unosImePrezime == "":            
+            unosImePrezime = input(F"Unesite ime i prezime {i+1}. studenta: ")
 
-        tempAdresa = input(F"Unesite adresu {i+1}. studenta:")
+        unosAdresa = input(F"Unesite adresu {i+1}. studenta:")
 
-        Studenti.append(StudentModel(tempImePrezime, tempAdresa))
+        Studenti.append(StudentModel(unosImePrezime, unosAdresa))
 
     for stud in Studenti:        
         if stud.Adresa == "":
