@@ -12,7 +12,7 @@ def UnosBodova(brojStud):
     for i in range(1, brojStud + 1):
         unosBod = int(input(F"Unesite broj bodova {i}. studenta (0-100): "))
         sum += unosBod
-    return sum / brojStud
+    return round(sum / brojStud, 2)
 
 def main():
     unosBrojStudenata = int(input("Unesi koliko je studenata izašlo na kolokvij: "))
