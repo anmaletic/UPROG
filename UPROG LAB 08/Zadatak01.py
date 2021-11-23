@@ -36,9 +36,17 @@ def main():
             unosOdabir = int(input("Odaberite redni broj spoja: "))
             print()
 
-            if(unosOdabir == 1):
-                print(F"Ukupan otpor otpornika R1 = {unosR1} Ohm i R2 = {unosR2} Ohm iznosi {paralelni_otpor(unosR1, unosR2)} Ohma")
-            else:
-                print(F"Ukupan otpor otpornika R1 = {unosR1} Ohm i R2 = {unosR2} Ohm iznosi {serijski_otpor(unosR1, unosR2)} Ohma")
+#            if(unosOdabir == 1):
+#                print(F"Ukupan otpor otpornika R1 = {unosR1} Ohm i R2 = {unosR2} Ohm iznosi {paralelni_otpor(unosR1, unosR2)} Ohma")
+#            else:
+#                print(F"Ukupan otpor otpornika R1 = {unosR1} Ohm i R2 = {unosR2} Ohm iznosi {serijski_otpor(unosR1, unosR2)} Ohma")
+
+
+#           Python 3.10
+            match unosOdabir:
+                case 1:
+                    print(F"Ukupan otpor otpornika R1 = {unosR1} Ohm i R2 = {unosR2} Ohm iznosi {paralelni_otpor(unosR1, unosR2)} Ohma")
+                case 2:
+                    print(F"Ukupan otpor otpornika R1 = {unosR1} Ohm i R2 = {unosR2} Ohm iznosi {serijski_otpor(unosR1, unosR2)} Ohma")
 
 main()
