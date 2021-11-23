@@ -12,7 +12,7 @@
 # to je broj 5. 
 
 def GetDjelitelj(p_br1, p_br2):
-    '''Pronalazi najveći zajednički djelitelj dva broja-'''
+    '''Pronalazi najveći zajednički djelitelj dva broja.'''
     loopRange = p_br1
     if (p_br1 > p_br2):
         loopRange = p_br2
@@ -23,7 +23,7 @@ def GetDjelitelj(p_br1, p_br2):
         
 
 def main():
-    title = "NAJVEći ZAJEDNIČKI DJELITELJ DVA BROJA"
+    title = "NAJVEĆI ZAJEDNIČKI DJELITELJ DVA BROJA"
     print(title)
     print("-" * len(title))
 

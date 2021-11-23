@@ -7,9 +7,6 @@
 # Ukupan otpor serijski spojenih otpornika R=R1+R2
 # Ukupan otpor paralelno spojenih otpornika R=R1*R2/(R1+R2).
 
-from typing import Match
-
-
 def serijski_otpor(p_r1, p_r2):
     '''Funkcija računa ukupan otpor serijskog spoja'''
     return p_r1 + p_r2
