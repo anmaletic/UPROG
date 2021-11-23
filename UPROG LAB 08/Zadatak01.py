@@ -7,13 +7,13 @@
 # Ukupan otpor serijski spojenih otpornika R=R1+R2
 # Ukupan otpor paralelno spojenih otpornika R=R1*R2/(R1+R2).
 
-def serijski_otpor(p_r1, p_r2):
+def serijski_otpor(r1, r2):
     '''Funkcija računa ukupan otpor serijskog spoja'''
-    return p_r1 + p_r2
+    return r1 + r2
 
-def paralelni_otpor(p_r1, p_r2):
+def paralelni_otpor(r1, r2):
     '''Funkcija računa ukupan otpor paralelnog spoja'''
-    return round((p_r1 * p_r2) / (p_r1 + p_r2), 2)
+    return round((r1 * r2) / (r1 + r2), 2)
 
 def main():
     while True:

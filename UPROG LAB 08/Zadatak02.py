@@ -11,14 +11,14 @@
 # 14, 13….dok ne dođete do prvog broja koji dijeli i 15 i 35. Taj broj je traženi NZD. U našem slučaju 
 # to je broj 5. 
 
-def GetDjelitelj(p_br1, p_br2):
+def GetDjelitelj(br1, br2):
     '''Pronalazi najveći zajednički djelitelj dva broja.'''
-    loopRange = p_br1
-    if (p_br1 > p_br2):
-        loopRange = p_br2
+    loopRange = br1
+    if (br1 > br2):
+        loopRange = br2
 
     for i in range(loopRange, 0, -1):
-        if(p_br1 % i == 0 and p_br2 % i == 0):
+        if(br1 % i == 0 and br2 % i == 0):
              return i
         
 

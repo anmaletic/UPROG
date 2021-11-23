@@ -4,11 +4,11 @@
 # ispis može se pozvati na dva načina – sa jednim ili sa dva argumenta. Ako se podatak o adresi ne 
 # pošalje funkciji, vrijednost njenog drugog parametra će biti ‘Adresa će biti naknadno upisana’. 
 
-def ispis(p_ip, p_add = "Adresa će biti naknadno upisana."):
+def ispis(ip, add = "Adresa će biti naknadno upisana."):
     '''Ispisuje ime, prezime i adresu studenta.'''
     print()
-    print(F"Ime i prezime: {p_ip}")
-    print(F"Adresa: {p_add}")
+    print(F"Ime i prezime: {ip}")
+    print(F"Adresa: {add}")
     print()
 
 
