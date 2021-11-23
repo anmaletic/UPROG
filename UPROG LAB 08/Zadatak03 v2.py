@@ -10,6 +10,7 @@ class StudentModel(object):
         self.Adresa = adresa
 
 def ispis(p_ip, p_add = "Adresa će biti naknadno upisana."):
+    '''Ispisuje ime, prezime i adresu studenta.'''
     print()
     print(F"Ime i prezime: {p_ip}")
     print(F"Adresa: {p_add}")
