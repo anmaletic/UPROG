@@ -9,11 +9,11 @@ class StudentModel(object):
         self.ImePrezime = imePrezime
         self.Adresa = adresa
 
-def ispis(p_ip, p_add = "Adresa će biti naknadno upisana."):
+def ispis(ip, add = "Adresa će biti naknadno upisana."):
     '''Ispisuje ime, prezime i adresu studenta.'''
     print()
-    print(F"Ime i prezime: {p_ip}")
-    print(F"Adresa: {p_add}")
+    print(F"Ime i prezime: {ip}")
+    print(F"Adresa: {add}")
 
 def main():
     Studenti = []
@@ -23,7 +23,7 @@ def main():
         while unosImePrezime == "":            
             unosImePrezime = input(F"Unesite ime i prezime {i+1}. studenta: ")
 
-        unosAdresa = input(F"Unesite adresu {i+1}. studenta:")
+        unosAdresa = input(F"Unesite adresu {i+1}. studenta: ")
 
         Studenti.append(StudentModel(unosImePrezime, unosAdresa))
 
