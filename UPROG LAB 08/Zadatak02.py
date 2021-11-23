@@ -13,9 +13,11 @@
 
 def GetDjelitelj(br1, br2):
     '''Pronalazi najveći zajednički djelitelj dva broja.'''
-    loopRange = br1
-    if (br1 > br2):
-        loopRange = br2
+#    loopRange = br1
+#    if (br1 > br2):
+#        loopRange = br2
+
+    loopRange = br1 if br1 < br2 else br2
 
     for i in range(loopRange, 0, -1):
         if(br1 % i == 0 and br2 % i == 0):
@@ -39,6 +41,5 @@ def main():
         else:
             print(F"Najveći zajednički djelitelj brojeva {unosBr1} i {unosBr2} je {GetDjelitelj(unosBr1, unosBr2)}")
             print()
-
 
 main()
