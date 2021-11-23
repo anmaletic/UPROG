@@ -25,11 +25,15 @@ def KontrolaUnosa(x, y):
     print(F"Od ishodišta je udaljena {round(udaljenost, 2)} mm.")
     
 def main():
-    unosX = int(input("Unesite x: "))
-    unosY = int(input("Unesite y: "))
-    print()
+    while True:
+        print("-" * 60)
+        unosX = int(input("Unesite x: "))
+        unosY = int(input("Unesite y: "))
+        print()
 
-    KontrolaUnosa(unosX, unosY)
+        if(unosX == 0 or unosY == 0):
+            break
 
+        KontrolaUnosa(unosX, unosY)
 
 main()
