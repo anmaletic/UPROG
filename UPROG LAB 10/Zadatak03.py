@@ -18,36 +18,52 @@ def provjeri_zagrade(izraz):
         elif izraz[i] == ")":
             zatvoreneZagrade += 1        
 
-    return True if otvoreneZagrade == zatvoreneZagrade else False
+    return "je" if otvoreneZagrade == zatvoreneZagrade else "nije"
 
 def tip_rezultata(izraz):
-    if(izraz.find(".") > -1 or izraz.find("/") > -1):
-        return float
+    tip = ""
+    for i in range(len(izraz)):
+        if izraz[i] == ".":
+            tip = "float"
+        elif izraz[i] == "/":
+            tip = "float"
+            if izraz[i+1] == "/" or izraz[i-1] == "/":
+                tip = "int"
+    return tip
+
+def tip_mislav(izraz):
+    if "//" in izraz and "." not in izraz:
+        print("int")
     else:
-        return int
+        print("float")
+
+def tip_dragana(izraz):
+    izraz = izraz.replace("//", "")
+    if "/" in izraz or "." in izraz:
+        print("float")
+    else:
+        print("int")
+
 
 def provjeri_zagradeCount(izraz):
-    return True if izraz.count("(") == izraz.count(")") else False
+    return "je" if izraz.count("(") == izraz.count(")") else "nije"
 
 def tip_rezultataCount(izraz):
     if(izraz.count(".") or izraz.count("/")):
-        return float
+        return "float"
     else:
-        return int
+        return "int"
 
 def main():
     unosIzraz = input("Unesite aritmetički izraz: ")
 
 #   a)
-    rez = "je" if provjeri_zagrade(unosIzraz) else "nije"
-
-    print(F"Broj zagrada {rez} isti.")
+    print(F"Broj zagrada {provjeri_zagrade(unosIzraz)} isti.")
     print(F"Tip rezultata je {tip_rezultata(unosIzraz)}")
-
+    tip_mislav(unosIzraz)
+    tip_dragana(unosIzraz)
 #   b)
-    rez = "je" if provjeri_zagradeCount(unosIzraz) else "nije"
-
-    print(F"Broj zagrada {rez} isti.")
-    print(F"Tip rezultata je {tip_rezultataCount(unosIzraz)}")
+ #   print(F"Broj zagrada {provjeri_zagradeCount(unosIzraz)} isti.")
+ #   print(F"Tip rezultata je {tip_rezultataCount(unosIzraz)}")
 
 main()

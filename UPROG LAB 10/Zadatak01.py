@@ -5,12 +5,12 @@
 
 
 def ispis(ime):
-    for i in range(len(ime)):
-        pocetak = ime[0:i+1]
-        kraj = ime[(len(ime) - (i+1))::]
-        slovo = ime[len(ime) - (i+1)].upper()
+    for i in range(1, len(ime)+1):
+        pocetak = ime[0:i]
+        kraj = ime[-i:]
+        slovo = ime[-i].upper()
         print(pocetak, " " * 5, kraj, " " * 5, slovo)
-
+        
 def main():
     unosIme = input("Unesite ime: ")
     ispis(unosIme)

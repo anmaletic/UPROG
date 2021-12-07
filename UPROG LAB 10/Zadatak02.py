@@ -10,10 +10,10 @@ def dekompres(tekst):
     temp_tekst = ""
     for i in range(len(tekst)):
         if i % 2 == 0:
-            slovo = tekst[i]
+            znak = tekst[i]
         else:
-            slovo = slovo * int(tekst[i])
-            temp_tekst += slovo
+            znak = znak * int(tekst[i])
+            temp_tekst += znak
     return temp_tekst
 
 def main():
