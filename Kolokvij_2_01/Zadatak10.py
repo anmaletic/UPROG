@@ -3,3 +3,14 @@
 # ispisuje.
 
 
+unosTekst = input("Unesite tekst: ")
+
+index = unosTekst.find('ije')
+if(index > 0):
+    tempTekst = unosTekst.replace('ije', '?')
+
+index = tempTekst.find('je')
+if(index > 0):
+    resTekst = tempTekst.replace('je', '?')
+
+print(resTekst)
