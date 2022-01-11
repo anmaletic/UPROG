@@ -17,7 +17,6 @@ proizvodi.append(["brasno", 124.4, 123])
 proizvodi.append(["riža", 1.45,  67])
 proizvodi.append(["cedevita", 456.7, 32])
 
-
 while True:
     unosNaziv = input("Unesite naziv proizvoda: ")
     if(unosNaziv == ""):
