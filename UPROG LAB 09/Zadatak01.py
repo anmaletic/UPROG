@@ -8,7 +8,7 @@ def ispis(p1, p2 = 1, p3 = 1, p4 = 1):
 
 def main():
     ispis(1)
-    ispis(2,p4=2)
+    ispis(2, p4=2)
     ispis(3, p3=2)
     ispis(4, 2)
     ispis(5, p4=5)
