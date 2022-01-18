@@ -6,7 +6,7 @@
 
 unosTekst = input("Unesite neki tekst: ")
 
-if "." and "!" and "?" not in unosTekst:
+if unosTekst[-1] not in ".!?":
     unosZnak = input("Unesite '.', '!' ili '?': ")
     unosTekst = unosTekst + unosZnak
 print(unosTekst)

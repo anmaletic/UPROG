@@ -12,5 +12,5 @@ unosN = int(input("n = "))
 listaBrojeva = list(range(10, unosN+1))
 print(listaBrojeva)
 
-listaIstih = list(num for num in listaBrojeva if str(num) == str(num)[::-1])
+listaIstih = list(broj for broj in listaBrojeva if str(broj) == str(broj)[::-1])
 print(listaIstih)
