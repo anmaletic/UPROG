@@ -6,7 +6,7 @@
 
 
 def FillDemoData():
-    return [ "Antonio", "Miroslav", "Mislav", "Zoran", "Tin", "Maja"]
+    return [ "Antonio", "Miroslav", "Mislav", "Petar", "Tin", "Ivan"]
 
 def SortirajListu(lista):
     for item in lista:

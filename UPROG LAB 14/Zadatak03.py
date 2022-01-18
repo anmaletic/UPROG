@@ -9,7 +9,7 @@
 
 def ispis(l1, l2):
     print()
-    print("Mjesec:         0     1     2     3     4     5")
+    print("Mjesec:         1     2     3     4     5     6")
 
     print("Potrošnja1:  ", end = "")
     for item in l1:
@@ -28,8 +28,13 @@ def minmax(l1, l2):
             l1[i], l2[i] = l2[i], l1[i]
 
 def main():
-    list1 = [123, 45, 145, 8, 16, 34]
-    list2 = [45, 67, 124, 13, 23, 98]
+    print("Prvi mobitel:")
+    list1 = [int(input(F"{i+1}. mjesec: ")) for i in range(6)]
+
+    print("Drugi mobitel:")
+    list2 = [int(input(F"{i+1}. mjesec: ")) for i in range(6)]
+#    list1 = [123, 45, 145, 8, 16, 34]
+#    list2 = [45, 67, 124, 13, 23, 98]
 
     ispis(list1, list2)
     minmax(list1, list2)

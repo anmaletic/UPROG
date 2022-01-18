@@ -9,14 +9,12 @@ listOperatori = ["+", "-", "*", ",,", "%", "/", ".."]
 unosIzraz = input("Unesite izraz:  ")
 print(unosIzraz)
 
-unosIzraz = unosIzraz.replace("//", "..")
-unosIzraz = unosIzraz.replace("**", ",,")
+unosIzraz = unosIzraz.replace("//", "..").replace("**", ",,")
 
 for op in listOperatori:
     if op in unosIzraz:
         unosIzraz = unosIzraz.replace(op, F" {op} ")
 
-unosIzraz = unosIzraz.replace("..", "//")
-unosIzraz = unosIzraz.replace(",,", "**")
+unosIzraz = unosIzraz.replace("..", "//").replace(",,", "**")
 
 print(unosIzraz)
