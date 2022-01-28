@@ -1,3 +1,6 @@
+# 2. 
+# Desno od znaka komentara napišite što će biti ispisano:
+
 gl = 'zvati'
 L = list(gl)
 print(L)                                        #   [z, v, a, t, i]
